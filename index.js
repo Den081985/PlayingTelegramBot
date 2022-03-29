@@ -24,7 +24,7 @@ const start = () => {
     },
     {
       command: "/game",
-      description: "Ига угадай цифру!",
+      description: "Игра угадай цифру!",
     },
   ]);
   //   //объект,содержащий кнопки
@@ -105,7 +105,7 @@ const start = () => {
       return startGame(chatId);
     }
     //проверка отгадал ли пользователь цифру
-    if (data === chat[chatId]) {
+    if (data == chat[chatId]) {
       return bot.sendMessage(
         chatId,
         `Поздравляю!Ты отгадал цифру ${chat[chatId]}`,
